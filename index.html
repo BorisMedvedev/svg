@@ -2,48 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
 </head>
 
 <style>
-  svg rect {
-    cursor: pointer;
-    transition: fill 0.5s, stroke 0.5s;
-    stroke-dasharray: 550 0;
-    transition: stroke-dasharray 2s;
-    /* animation: dach 3s infinite alternate; */
+  body {
+    background-color: rgb(180, 180, 180);
   }
 
-  svg rect:hover {
-    fill: #ffffff;
-    stroke: blue;
-    stroke-dasharray: 0 550;
-
+  .bum1 {
+    transform: rotate(-45deg);
   }
 
-  @keyframes dach {
-    50% {
-      stroke-dasharray: 0 200;
-    }
-
-    100% {
-      stroke-dasharray: 0 550;
-    }
+  .bum {
+    transform: rotate(45deg);
   }
+
 </style>
 
 <body>
-  <svg width="200" height="200">
-    <g fill="red">
-      <rect width="200" height="200" x="0" y="0" fill="#fff000" stroke="#000000" stroke-width="10" />
-      <!-- <rect width="100" height="100" x="50" y="50" fill="blue" stroke="red" stroke-width="5" />
-      <polygon points="0, 180 100, 0 200, 180" fill="rgba(248, 123, 144, 0.9)" /> -->
-      <!-- <circle r="50" cx="100" cy="100" fill="rgba(0, 0, 0, 0.6)" /> -->
-      <!-- <ellipse rx="100" ry="50" cx="100" cy="100" /> -->
+  <svg viewbox="-5 0 166 149" width="166" height="149" style="margin: 0 auto; display: block">
+    <g class="bum">
+      <ellipse rx="20" ry="27" cx="40" cy="10" fill="#4A4A4A" />
+      <ellipse rx="10" ry="15" cx="40" cy="10" fill="#000000" />
     </g>
+    <g class="bum1">
+      <ellipse rx="20" ry="27" cx="73" cy="120" fill="#4A4A4A" />
+      <ellipse rx="10" ry="15" cx="73" cy="120" fill="#000000" />
+    </g>
+    <circle r="70" cx="80" cy="80" fill="#ffffff" />
+    <g>
+      <ellipse rx="15" ry="19" cx="50" cy="90" fill="#4A4A4A" />
+      <circle r="7" cx="50" cy="85" fill="#000000" />
+      <circle r="3" cx="47" cy="83" fill="#ffffff" />
+    </g>
+    <g>
+      <ellipse rx="15" ry="19" cx="110" cy="90" fill="#4A4A4A" />
+      <circle r="7" cx="110" cy="85" fill="#000000" />
+      <circle r="3" cx="107" cy="83" fill="#ffffff" />
+    </g>
+
+    <ellipse rx="10" ry="7" cx="80" cy="110" fill="#000000" />
   </svg>
 </body>
 
